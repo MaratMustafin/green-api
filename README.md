@@ -1,7 +1,38 @@
-# Vue 3 + Vite
+# Тестовое задание
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Требование
+1. ~~Требуется разработать HTML-страницу с вызовом методов GREEN-API:~~ 
+    • getSettings
+    • getStateInstance
+    • sendMessage
+    • sendFileByUrl
+2. ~~Требуется разместить на странице параметры подключения к инстансу - idInstance
+и ApiTokenInstance~~ 
+3. ~~Требуется вывести ответ методов в отдельное поле на странице только для чтения.~~
+4. ~~Требуется придерживаться макета – см. рис. ниже.~~
 
-## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Запуск
+Версия node v16.15.1
+```cmd
+npm run dev 
+```
+
+### Билд
+
+```cmd
+npm run build
+cd dist
+# add . to path before /assets
+python -m http.server
+open
+```
+
+
+### Видео-презентация
+
+
+### ToDo 
+Добавить историю, сохранять запросы
+Добавить кнопки для копирования, удаления
+Добавить поиск по меткам.
